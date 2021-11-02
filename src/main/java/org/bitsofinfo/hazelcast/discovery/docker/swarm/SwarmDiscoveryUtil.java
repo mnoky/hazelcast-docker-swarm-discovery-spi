@@ -1,9 +1,9 @@
 package org.bitsofinfo.hazelcast.discovery.docker.swarm;
 
+import com.hazelcast.cluster.Address;
 import com.hazelcast.core.HazelcastException;
 import com.hazelcast.logging.ILogger;
 import com.hazelcast.logging.Logger;
-import com.hazelcast.nio.Address;
 import com.spotify.docker.client.DefaultDockerClient;
 import com.spotify.docker.client.DefaultDockerClient.Builder;
 import com.spotify.docker.client.DockerClient;
@@ -559,6 +559,3 @@ public class SwarmDiscoveryUtil {
     }
 
 }
-
-
-

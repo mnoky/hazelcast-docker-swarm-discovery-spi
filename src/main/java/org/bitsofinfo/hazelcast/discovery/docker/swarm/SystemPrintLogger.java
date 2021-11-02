@@ -48,6 +48,21 @@ public class SystemPrintLogger implements ILogger {
     }
 
     @Override
+    public void info(Throwable thrown) {
+        System.out.println("INFO " + thrown.getMessage());
+    }
+
+    @Override
+    public void info(String message, Throwable thrown) {
+        System.out.println("INFO " + message + " " + thrown.getMessage());
+    }
+
+    @Override
+    public boolean isSevereEnabled() {
+        return false;
+    }
+
+    @Override
     public void warning(String message) {
         System.out.println("WARNING " + message);
     }

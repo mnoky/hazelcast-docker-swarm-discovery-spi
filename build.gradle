@@ -13,6 +13,7 @@ plugins {
 }
 
 group = 'org.bitsofinfo'
+version = '1.0-RC15'
 
 allprojects {
     repositories {
@@ -31,7 +32,7 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 dependencies {
-    compile group: 'com.hazelcast', name: 'hazelcast', version: '[3.9,3.10-BETA-1)'
+    compile group: 'com.hazelcast', name: 'hazelcast', version: '4.2.2'
     compile group: 'com.spotify', name: 'docker-client', version: '[8,9)', classifier: 'shaded'
 }
 
@@ -140,6 +141,20 @@ unitTest {
         events 'started', 'passed'
     }
 }
+install {
+    repositories {
+        mavenInstaller {
+            pom.version = '1.0-RC15'
+            pom.groupId = 'org.bitsofinfo'
+            pom.artifactId = 'hazelcast-docker-swarm-discovery-spi'
+        }
+    }
+}
 
-
-
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            mavenLocal()
+        }
+    }
+}
