@@ -52,4 +52,68 @@
             <version>8.16.0</version>
         </dependency>
     </dependencies>
+
+    <profiles>
+        <profile>
+            <id>releases</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>1.6.8</version>
+                        <executions>
+                            <execution>
+                                <id>default-deploy</id>
+                                <phase>deploy</phase>
+                                <goals>
+                                    <goal>deploy</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <serverId>nexus-esms-releases</serverId>
+                            <nexusUrl>https://repository.preprod.weforum.org/repository/maven-esms-releases
+                            </nexusUrl>
+                            <skipStaging>true</skipStaging>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-esms-snapshots</id>
+            <url>https://repository.preprod.weforum.org/repository/maven-esms-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-esms-releases</id>
+            <url>https://repository.preprod.weforum.org/repository/maven-esms-releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>nexus-forum-releases</id>
+            <url>https://repository.preprod.weforum.org/repository/maven-releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>nexus-forum-snapshots</id>
+            <url>https://repository.preprod.weforum.org/repository/maven-snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 </project>
