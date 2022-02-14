@@ -5,7 +5,7 @@
 
     <groupId>org.bitsofinfo</groupId>
     <artifactId>hazelcast-docker-swarm-discovery-spi</artifactId>
-    <version>1.0-RC15-40</version>
+    <version>1.0-RC16-41</version>
     <name>hazelcast-docker-swarm-discovery-spi</name>
     <description>Docker swarm based discovery strategy SPI for Hazelcast enabled applications</description>
 
@@ -17,6 +17,11 @@
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <srcclr-maven-plugin.version>3.1.21</srcclr-maven-plugin.version>
+        <srcclr-token>
+            eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQ4MTMyLCJleHAiOjE2NDQzMjg4NTcsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiJmMmE0MWQ0Zi1kZWExLTRmZTUtYWQ3Yy05YTA3Y2JhY2IxNWQiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.oVcw0lOr0BpeKcG-SfkJBalKJt0h-GnfwqdBZex7nLo5seCbhq2Vxkg6u9CGtGqH34Aw4Kzy4Rx8-TqSy_XGeeBIbDeJO1UGXJX1s9au8inMeqT9ZMRCYhmZ-Rl4TVkmyiD78ShK096zTN0_E28j-Jl0ZVwixW-3rlh-kTtK9R0
+        </srcclr-token>
     </properties>
 
     <pluginRepositories>
@@ -39,10 +44,105 @@
             <groupId>com.spotify</groupId>
             <artifactId>docker-client</artifactId>
             <classifier>shaded</classifier>
+            <exclusions>
+                <exclusion>
+                    <artifactId>jackson-databind</artifactId>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>commons-io</artifactId>
+                    <groupId>commons-io</groupId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.glassfish.jersey.core</groupId>
+                    <artifactId>jersey-common</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>commons-codec</groupId>
+                    <artifactId>commons-codec</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-compress</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.bouncycastle</groupId>
+                    <artifactId>bcprov-jdk15on</artifactId>
+                </exclusion>
+            </exclusions>
             <version>8.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bouncycastle</groupId>
+            <artifactId>bcprov-jdk15on</artifactId>
+            <version>1.70</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-compress</artifactId>
+            <version>1.21</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-common</artifactId>
+            <version>3.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.0.1-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.srcclr</groupId>
+                <artifactId>srcclr-maven-plugin</artifactId>
+                <version>${srcclr-maven-plugin.version}</version>
+                <configuration>
+                    <apiToken>${srcclr-token}</apiToken>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>srcclr-scan</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>scan</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <profiles>
         <profile>
             <id>releases</id>
