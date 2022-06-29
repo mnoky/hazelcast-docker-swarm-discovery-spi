@@ -14,34 +14,35 @@
       "@id": 2,
       "coords": {
         "coordinateType": "MAVEN",
-        "coordinate1": "commons-codec",
-        "coordinate2": "commons-codec",
-        "version": "1.15",
+        "coordinate1": "org.apache.httpcomponents",
+        "coordinate2": "httpclient",
+        "version": "4.5.13",
         "scope": "compile",
         "platform": null,
         "commitHash": null
       },
-      "directs": [],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-      "lineNumber": null,
-      "moduleName": null,
-      "sha1": null,
-      "sha2": null,
-      "bytecodeHash": null
-    },
-    {
-      "@id": 3,
-      "coords": {
-        "coordinateType": "MAVEN",
-        "coordinate1": "commons-io",
-        "coordinate2": "commons-io",
-        "version": "2.11.0",
-        "scope": "compile",
-        "platform": null,
-        "commitHash": null
-      },
-      "directs": [],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "directs": [
+        {
+          "@id": 3,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "commons-logging",
+            "coordinate2": "commons-logging",
+            "version": "1.2",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        }
+      ],
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
       "lineNumber": null,
       "moduleName": null,
       "sha1": null,
@@ -52,660 +53,6 @@
       "@id": 4,
       "coords": {
         "coordinateType": "MAVEN",
-        "coordinate1": "com.spotify",
-        "coordinate2": "docker-client",
-        "version": "8.16.0",
-        "scope": "compile",
-        "platform": null,
-        "commitHash": null
-      },
-      "directs": [
-        {
-          "@id": 5,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "commons-lang",
-            "coordinate2": "commons-lang",
-            "version": "2.6",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 6,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.fasterxml.jackson.datatype",
-            "coordinate2": "jackson-datatype-guava",
-            "version": "2.9.8",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 7,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "javax.activation",
-            "coordinate2": "activation",
-            "version": "1.1",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 8,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.glassfish.jersey.core",
-            "coordinate2": "jersey-client",
-            "version": "2.22.2",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [
-            {
-              "@id": 9,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "org.glassfish.hk2.external",
-                "coordinate2": "javax.inject",
-                "version": "2.4.0-b34",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            },
-            {
-              "@id": 10,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "org.glassfish.hk2",
-                "coordinate2": "hk2-api",
-                "version": "2.4.0-b34",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [
-                {
-                  "@id": 11,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.glassfish.hk2",
-                    "coordinate2": "hk2-utils",
-                    "version": "2.4.0-b34",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                },
-                {
-                  "@id": 12,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.glassfish.hk2.external",
-                    "coordinate2": "aopalliance-repackaged",
-                    "version": "2.4.0-b34",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                }
-              ],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            },
-            {
-              "@id": 13,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "org.glassfish.hk2",
-                "coordinate2": "hk2-locator",
-                "version": "2.4.0-b34",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [
-                {
-                  "@id": 14,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.javassist",
-                    "coordinate2": "javassist",
-                    "version": "3.18.1-GA",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                }
-              ],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            },
-            {
-              "@id": 15,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "javax.ws.rs",
-                "coordinate2": "javax.ws.rs-api",
-                "version": "2.0.1",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            }
-          ],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 16,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.apache.httpcomponents",
-            "coordinate2": "httpcore",
-            "version": "4.4.5",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 17,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.github.jnr",
-            "coordinate2": "jnr-unixsocket",
-            "version": "0.18",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [
-            {
-              "@id": 18,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "com.github.jnr",
-                "coordinate2": "jnr-ffi",
-                "version": "2.1.4",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [
-                {
-                  "@id": 19,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "com.github.jnr",
-                    "coordinate2": "jffi",
-                    "version": "1.2.15",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                },
-                {
-                  "@id": 20,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.ow2.asm",
-                    "coordinate2": "asm-analysis",
-                    "version": "5.0.3",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                },
-                {
-                  "@id": 21,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.ow2.asm",
-                    "coordinate2": "asm-tree",
-                    "version": "5.0.3",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                },
-                {
-                  "@id": 22,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "com.github.jnr",
-                    "coordinate2": "jnr-x86asm",
-                    "version": "1.0.2",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                },
-                {
-                  "@id": 23,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.ow2.asm",
-                    "coordinate2": "asm-util",
-                    "version": "5.0.3",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                },
-                {
-                  "@id": 24,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.ow2.asm",
-                    "coordinate2": "asm",
-                    "version": "5.0.3",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                },
-                {
-                  "@id": 25,
-                  "coords": {
-                    "coordinateType": "MAVEN",
-                    "coordinate1": "org.ow2.asm",
-                    "coordinate2": "asm-commons",
-                    "version": "5.0.3",
-                    "scope": "compile",
-                    "platform": null,
-                    "commitHash": null
-                  },
-                  "directs": [],
-                  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-                  "lineNumber": null,
-                  "moduleName": null,
-                  "sha1": null,
-                  "sha2": null,
-                  "bytecodeHash": null
-                }
-              ],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            },
-            {
-              "@id": 26,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "com.github.jnr",
-                "coordinate2": "jnr-posix",
-                "version": "3.0.35",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            },
-            {
-              "@id": 27,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "com.github.jnr",
-                "coordinate2": "jnr-constants",
-                "version": "0.9.8",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            },
-            {
-              "@id": 28,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "com.github.jnr",
-                "coordinate2": "jnr-enxio",
-                "version": "0.16",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            }
-          ],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 29,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.glassfish.jersey.connectors",
-            "coordinate2": "jersey-apache-connector",
-            "version": "2.22.2",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 30,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.slf4j",
-            "coordinate2": "slf4j-api",
-            "version": "1.7.22",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 31,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.bouncycastle",
-            "coordinate2": "bcpkix-jdk15on",
-            "version": "1.60",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 32,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.fasterxml.jackson.jaxrs",
-            "coordinate2": "jackson-jaxrs-json-provider",
-            "version": "2.9.8",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [
-            {
-              "@id": 33,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "com.fasterxml.jackson.jaxrs",
-                "coordinate2": "jackson-jaxrs-base",
-                "version": "2.9.8",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            },
-            {
-              "@id": 34,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "com.fasterxml.jackson.module",
-                "coordinate2": "jackson-module-jaxb-annotations",
-                "version": "2.9.8",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            }
-          ],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 35,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.glassfish.jersey.media",
-            "coordinate2": "jersey-media-json-jackson",
-            "version": "2.22.2",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [
-            {
-              "@id": 36,
-              "coords": {
-                "coordinateType": "MAVEN",
-                "coordinate1": "org.glassfish.jersey.ext",
-                "coordinate2": "jersey-entity-filtering",
-                "version": "2.22.2",
-                "scope": "compile",
-                "platform": null,
-                "commitHash": null
-              },
-              "directs": [],
-              "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-              "lineNumber": null,
-              "moduleName": null,
-              "sha1": null,
-              "sha2": null,
-              "bytecodeHash": null
-            }
-          ],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        }
-      ],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-      "lineNumber": null,
-      "moduleName": null,
-      "sha1": null,
-      "sha2": null,
-      "bytecodeHash": null
-    },
-    {
-      "@id": 37,
-      "coords": {
-        "coordinateType": "MAVEN",
-        "coordinate1": "com.hazelcast",
-        "coordinate2": "hazelcast",
-        "version": "4.2.5",
-        "scope": "compile",
-        "platform": null,
-        "commitHash": null
-      },
-      "directs": [],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-      "lineNumber": null,
-      "moduleName": null,
-      "sha1": null,
-      "sha2": null,
-      "bytecodeHash": null
-    },
-    {
-      "@id": 38,
-      "coords": {
-        "coordinateType": "MAVEN",
         "coordinate1": "org.bouncycastle",
         "coordinate2": "bcprov-jdk15on",
         "version": "1.70",
@@ -714,7 +61,7 @@
         "commitHash": null
       },
       "directs": [],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
       "lineNumber": null,
       "moduleName": null,
       "sha1": null,
@@ -722,256 +69,7 @@
       "bytecodeHash": null
     },
     {
-      "@id": 39,
-      "coords": {
-        "coordinateType": "MAVEN",
-        "coordinate1": "com.google.guava",
-        "coordinate2": "guava",
-        "version": "31.0.1-jre",
-        "scope": "compile",
-        "platform": null,
-        "commitHash": null
-      },
-      "directs": [
-        {
-          "@id": 40,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.google.errorprone",
-            "coordinate2": "error_prone_annotations",
-            "version": "2.7.1",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 41,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.checkerframework",
-            "coordinate2": "checker-qual",
-            "version": "3.12.0",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 42,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.google.j2objc",
-            "coordinate2": "j2objc-annotations",
-            "version": "1.3",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 43,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.google.code.findbugs",
-            "coordinate2": "jsr305",
-            "version": "3.0.2",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 44,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.google.guava",
-            "coordinate2": "failureaccess",
-            "version": "1.0.1",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 45,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "com.google.guava",
-            "coordinate2": "listenablefuture",
-            "version": "9999.0-empty-to-avoid-conflict-with-guava",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        }
-      ],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-      "lineNumber": null,
-      "moduleName": null,
-      "sha1": null,
-      "sha2": null,
-      "bytecodeHash": null
-    },
-    {
-      "@id": 46,
-      "coords": {
-        "coordinateType": "MAVEN",
-        "coordinate1": "org.apache.commons",
-        "coordinate2": "commons-compress",
-        "version": "1.21",
-        "scope": "compile",
-        "platform": null,
-        "commitHash": null
-      },
-      "directs": [],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-      "lineNumber": null,
-      "moduleName": null,
-      "sha1": null,
-      "sha2": null,
-      "bytecodeHash": null
-    },
-    {
-      "@id": 47,
-      "coords": {
-        "coordinateType": "MAVEN",
-        "coordinate1": "org.glassfish.jersey.core",
-        "coordinate2": "jersey-common",
-        "version": "3.0.3",
-        "scope": "compile",
-        "platform": null,
-        "commitHash": null
-      },
-      "directs": [
-        {
-          "@id": 48,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "jakarta.ws.rs",
-            "coordinate2": "jakarta.ws.rs-api",
-            "version": "3.0.0",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 49,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "jakarta.annotation",
-            "coordinate2": "jakarta.annotation-api",
-            "version": "2.0.0",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 50,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "org.glassfish.hk2",
-            "coordinate2": "osgi-resource-locator",
-            "version": "1.0.3",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        },
-        {
-          "@id": 51,
-          "coords": {
-            "coordinateType": "MAVEN",
-            "coordinate1": "jakarta.inject",
-            "coordinate2": "jakarta.inject-api",
-            "version": "2.0.0",
-            "scope": "compile",
-            "platform": null,
-            "commitHash": null
-          },
-          "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-          "lineNumber": null,
-          "moduleName": null,
-          "sha1": null,
-          "sha2": null,
-          "bytecodeHash": null
-        }
-      ],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
-      "lineNumber": null,
-      "moduleName": null,
-      "sha1": null,
-      "sha2": null,
-      "bytecodeHash": null
-    },
-    {
-      "@id": 52,
+      "@id": 5,
       "coords": {
         "coordinateType": "MAVEN",
         "coordinate1": "com.fasterxml.jackson.core",
@@ -983,7 +81,7 @@
       },
       "directs": [
         {
-          "@id": 53,
+          "@id": 6,
           "coords": {
             "coordinateType": "MAVEN",
             "coordinate1": "com.fasterxml.jackson.core",
@@ -994,7 +92,7 @@
             "commitHash": null
           },
           "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
           "lineNumber": null,
           "moduleName": null,
           "sha1": null,
@@ -1002,7 +100,7 @@
           "bytecodeHash": null
         },
         {
-          "@id": 54,
+          "@id": 7,
           "coords": {
             "coordinateType": "MAVEN",
             "coordinate1": "com.fasterxml.jackson.core",
@@ -1013,7 +111,7 @@
             "commitHash": null
           },
           "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
           "lineNumber": null,
           "moduleName": null,
           "sha1": null,
@@ -1021,7 +119,7 @@
           "bytecodeHash": null
         }
       ],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
       "lineNumber": null,
       "moduleName": null,
       "sha1": null,
@@ -1029,30 +127,87 @@
       "bytecodeHash": null
     },
     {
-      "@id": 55,
+      "@id": 8,
       "coords": {
         "coordinateType": "MAVEN",
-        "coordinate1": "org.apache.httpcomponents",
-        "coordinate2": "httpclient",
-        "version": "4.5.13",
+        "coordinate1": "org.glassfish.jersey.core",
+        "coordinate2": "jersey-common",
+        "version": "3.0.3",
         "scope": "compile",
         "platform": null,
         "commitHash": null
       },
       "directs": [
         {
-          "@id": 56,
+          "@id": 9,
           "coords": {
             "coordinateType": "MAVEN",
-            "coordinate1": "commons-logging",
-            "coordinate2": "commons-logging",
-            "version": "1.2",
+            "coordinate1": "jakarta.inject",
+            "coordinate2": "jakarta.inject-api",
+            "version": "2.0.0",
             "scope": "compile",
             "platform": null,
             "commitHash": null
           },
           "directs": [],
-          "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 10,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "jakarta.annotation",
+            "coordinate2": "jakarta.annotation-api",
+            "version": "2.0.0",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 11,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.glassfish.hk2",
+            "coordinate2": "osgi-resource-locator",
+            "version": "1.0.3",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 12,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "jakarta.ws.rs",
+            "coordinate2": "jakarta.ws.rs-api",
+            "version": "3.0.0",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
           "lineNumber": null,
           "moduleName": null,
           "sha1": null,
@@ -1060,7 +215,852 @@
           "bytecodeHash": null
         }
       ],
-      "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "lineNumber": null,
+      "moduleName": null,
+      "sha1": null,
+      "sha2": null,
+      "bytecodeHash": null
+    },
+    {
+      "@id": 13,
+      "coords": {
+        "coordinateType": "MAVEN",
+        "coordinate1": "commons-codec",
+        "coordinate2": "commons-codec",
+        "version": "1.15",
+        "scope": "compile",
+        "platform": null,
+        "commitHash": null
+      },
+      "directs": [],
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "lineNumber": null,
+      "moduleName": null,
+      "sha1": null,
+      "sha2": null,
+      "bytecodeHash": null
+    },
+    {
+      "@id": 14,
+      "coords": {
+        "coordinateType": "MAVEN",
+        "coordinate1": "org.apache.commons",
+        "coordinate2": "commons-compress",
+        "version": "1.21",
+        "scope": "compile",
+        "platform": null,
+        "commitHash": null
+      },
+      "directs": [],
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "lineNumber": null,
+      "moduleName": null,
+      "sha1": null,
+      "sha2": null,
+      "bytecodeHash": null
+    },
+    {
+      "@id": 15,
+      "coords": {
+        "coordinateType": "MAVEN",
+        "coordinate1": "commons-io",
+        "coordinate2": "commons-io",
+        "version": "2.11.0",
+        "scope": "compile",
+        "platform": null,
+        "commitHash": null
+      },
+      "directs": [],
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "lineNumber": null,
+      "moduleName": null,
+      "sha1": null,
+      "sha2": null,
+      "bytecodeHash": null
+    },
+    {
+      "@id": 16,
+      "coords": {
+        "coordinateType": "MAVEN",
+        "coordinate1": "com.google.guava",
+        "coordinate2": "guava",
+        "version": "31.0.1-jre",
+        "scope": "compile",
+        "platform": null,
+        "commitHash": null
+      },
+      "directs": [
+        {
+          "@id": 17,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.google.code.findbugs",
+            "coordinate2": "jsr305",
+            "version": "3.0.2",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 18,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.google.guava",
+            "coordinate2": "listenablefuture",
+            "version": "9999.0-empty-to-avoid-conflict-with-guava",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 19,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.google.guava",
+            "coordinate2": "failureaccess",
+            "version": "1.0.1",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 20,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.google.errorprone",
+            "coordinate2": "error_prone_annotations",
+            "version": "2.7.1",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 21,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.checkerframework",
+            "coordinate2": "checker-qual",
+            "version": "3.12.0",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 22,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.google.j2objc",
+            "coordinate2": "j2objc-annotations",
+            "version": "1.3",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        }
+      ],
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "lineNumber": null,
+      "moduleName": null,
+      "sha1": null,
+      "sha2": null,
+      "bytecodeHash": null
+    },
+    {
+      "@id": 23,
+      "coords": {
+        "coordinateType": "MAVEN",
+        "coordinate1": "com.hazelcast",
+        "coordinate2": "hazelcast",
+        "version": "4.2.5",
+        "scope": "compile",
+        "platform": null,
+        "commitHash": null
+      },
+      "directs": [],
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+      "lineNumber": null,
+      "moduleName": null,
+      "sha1": null,
+      "sha2": null,
+      "bytecodeHash": null
+    },
+    {
+      "@id": 24,
+      "coords": {
+        "coordinateType": "MAVEN",
+        "coordinate1": "com.spotify",
+        "coordinate2": "docker-client",
+        "version": "8.16.0",
+        "scope": "compile",
+        "platform": null,
+        "commitHash": null
+      },
+      "directs": [
+        {
+          "@id": 25,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.slf4j",
+            "coordinate2": "slf4j-api",
+            "version": "1.7.22",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 26,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.github.jnr",
+            "coordinate2": "jnr-unixsocket",
+            "version": "0.18",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [
+            {
+              "@id": 27,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "com.github.jnr",
+                "coordinate2": "jnr-ffi",
+                "version": "2.1.4",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [
+                {
+                  "@id": 28,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.ow2.asm",
+                    "coordinate2": "asm-util",
+                    "version": "5.0.3",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                },
+                {
+                  "@id": 29,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "com.github.jnr",
+                    "coordinate2": "jnr-x86asm",
+                    "version": "1.0.2",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                },
+                {
+                  "@id": 30,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.ow2.asm",
+                    "coordinate2": "asm",
+                    "version": "5.0.3",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                },
+                {
+                  "@id": 31,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.ow2.asm",
+                    "coordinate2": "asm-analysis",
+                    "version": "5.0.3",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                },
+                {
+                  "@id": 32,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "com.github.jnr",
+                    "coordinate2": "jffi",
+                    "version": "1.2.15",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                },
+                {
+                  "@id": 33,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.ow2.asm",
+                    "coordinate2": "asm-tree",
+                    "version": "5.0.3",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                },
+                {
+                  "@id": 34,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.ow2.asm",
+                    "coordinate2": "asm-commons",
+                    "version": "5.0.3",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                }
+              ],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            },
+            {
+              "@id": 35,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "com.github.jnr",
+                "coordinate2": "jnr-constants",
+                "version": "0.9.8",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            },
+            {
+              "@id": 36,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "com.github.jnr",
+                "coordinate2": "jnr-enxio",
+                "version": "0.16",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            },
+            {
+              "@id": 37,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "com.github.jnr",
+                "coordinate2": "jnr-posix",
+                "version": "3.0.35",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            }
+          ],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 38,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.apache.httpcomponents",
+            "coordinate2": "httpcore",
+            "version": "4.4.5",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 39,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.glassfish.jersey.media",
+            "coordinate2": "jersey-media-json-jackson",
+            "version": "2.22.2",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [
+            {
+              "@id": 40,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "org.glassfish.jersey.ext",
+                "coordinate2": "jersey-entity-filtering",
+                "version": "2.22.2",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            }
+          ],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 41,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.glassfish.jersey.core",
+            "coordinate2": "jersey-client",
+            "version": "2.22.2",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [
+            {
+              "@id": 42,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "org.glassfish.hk2",
+                "coordinate2": "hk2-locator",
+                "version": "2.4.0-b34",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [
+                {
+                  "@id": 43,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.javassist",
+                    "coordinate2": "javassist",
+                    "version": "3.18.1-GA",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                }
+              ],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            },
+            {
+              "@id": 44,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "javax.ws.rs",
+                "coordinate2": "javax.ws.rs-api",
+                "version": "2.0.1",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            },
+            {
+              "@id": 45,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "org.glassfish.hk2",
+                "coordinate2": "hk2-api",
+                "version": "2.4.0-b34",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [
+                {
+                  "@id": 46,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.glassfish.hk2",
+                    "coordinate2": "hk2-utils",
+                    "version": "2.4.0-b34",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                },
+                {
+                  "@id": 47,
+                  "coords": {
+                    "coordinateType": "MAVEN",
+                    "coordinate1": "org.glassfish.hk2.external",
+                    "coordinate2": "aopalliance-repackaged",
+                    "version": "2.4.0-b34",
+                    "scope": "compile",
+                    "platform": null,
+                    "commitHash": null
+                  },
+                  "directs": [],
+                  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+                  "lineNumber": null,
+                  "moduleName": null,
+                  "sha1": null,
+                  "sha2": null,
+                  "bytecodeHash": null
+                }
+              ],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            },
+            {
+              "@id": 48,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "org.glassfish.hk2.external",
+                "coordinate2": "javax.inject",
+                "version": "2.4.0-b34",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            }
+          ],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 49,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.fasterxml.jackson.jaxrs",
+            "coordinate2": "jackson-jaxrs-json-provider",
+            "version": "2.9.8",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [
+            {
+              "@id": 50,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "com.fasterxml.jackson.module",
+                "coordinate2": "jackson-module-jaxb-annotations",
+                "version": "2.9.8",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            },
+            {
+              "@id": 51,
+              "coords": {
+                "coordinateType": "MAVEN",
+                "coordinate1": "com.fasterxml.jackson.jaxrs",
+                "coordinate2": "jackson-jaxrs-base",
+                "version": "2.9.8",
+                "scope": "compile",
+                "platform": null,
+                "commitHash": null
+              },
+              "directs": [],
+              "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+              "lineNumber": null,
+              "moduleName": null,
+              "sha1": null,
+              "sha2": null,
+              "bytecodeHash": null
+            }
+          ],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 52,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "commons-lang",
+            "coordinate2": "commons-lang",
+            "version": "2.6",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 53,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "com.fasterxml.jackson.datatype",
+            "coordinate2": "jackson-datatype-guava",
+            "version": "2.9.8",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 54,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.glassfish.jersey.connectors",
+            "coordinate2": "jersey-apache-connector",
+            "version": "2.22.2",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 55,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "javax.activation",
+            "coordinate2": "activation",
+            "version": "1.1",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        },
+        {
+          "@id": 56,
+          "coords": {
+            "coordinateType": "MAVEN",
+            "coordinate1": "org.bouncycastle",
+            "coordinate2": "bcpkix-jdk15on",
+            "version": "1.60",
+            "scope": "compile",
+            "platform": null,
+            "commitHash": null
+          },
+          "directs": [],
+          "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+          "lineNumber": null,
+          "moduleName": null,
+          "sha1": null,
+          "sha2": null,
+          "bytecodeHash": null
+        }
+      ],
+      "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
       "lineNumber": null,
       "moduleName": null,
       "sha1": null,
@@ -1068,7 +1068,7 @@
       "bytecodeHash": null
     }
   ],
-  "filename": "esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
+  "filename": "esms/esms-utils-hazelcast-docker-swarm-discovery-spi/pom.xml",
   "lineNumber": null,
   "moduleName": null,
   "sha1": null,
