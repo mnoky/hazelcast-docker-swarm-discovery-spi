@@ -143,6 +143,13 @@ public class SwarmAddressPicker implements AddressPicker {
     }
 
     @Override
+    public Map<EndpointQualifier, Address> getBindAddressMap() {
+        HashMap<EndpointQualifier, Address> publicAddressMap = new HashMap<>();
+        publicAddressMap.put(MEMBER, this.swarmDiscoveryUtil.getMyAddress());
+        return publicAddressMap;
+    }
+
+    @Override
     public ServerSocketChannel getServerSocketChannel(EndpointQualifier qualifier) {
         return getServerSocketChannel();
     }

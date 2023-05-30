@@ -5,23 +5,22 @@
 
     <groupId>org.bitsofinfo</groupId>
     <artifactId>hazelcast-docker-swarm-discovery-spi</artifactId>
-    <version>1.0-RC16-41</version>
+    <version>1.0-RC16-42</version>
     <name>hazelcast-docker-swarm-discovery-spi</name>
     <description>Docker swarm based discovery strategy SPI for Hazelcast enabled applications</description>
 
     <properties>
-        <hazelcast.version>4.2.5</hazelcast.version>
+        <hazelcast.version>5.2.2</hazelcast.version>
 
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>11</java.version>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-        <srcclr-maven-plugin.version>3.1.21</srcclr-maven-plugin.version>
-        <srcclr-token>
-            eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjQ4MTMyLCJleHAiOjE2NDQzMjg4NTcsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiJmMmE0MWQ0Zi1kZWExLTRmZTUtYWQ3Yy05YTA3Y2JhY2IxNWQiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.oVcw0lOr0BpeKcG-SfkJBalKJt0h-GnfwqdBZex7nLo5seCbhq2Vxkg6u9CGtGqH34Aw4Kzy4Rx8-TqSy_XGeeBIbDeJO1UGXJX1s9au8inMeqT9ZMRCYhmZ-Rl4TVkmyiD78ShK096zTN0_E28j-Jl0ZVwixW-3rlh-kTtK9R0
-        </srcclr-token>
     </properties>
 
     <pluginRepositories>
@@ -122,27 +121,6 @@
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>com.srcclr</groupId>
-                <artifactId>srcclr-maven-plugin</artifactId>
-                <version>${srcclr-maven-plugin.version}</version>
-                <configuration>
-                    <apiToken>${srcclr-token}</apiToken>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>srcclr-scan</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>scan</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
     <profiles>
         <profile>
             <id>releases</id>
@@ -163,7 +141,7 @@
                         </executions>
                         <configuration>
                             <serverId>nexus-esms-releases</serverId>
-                            <nexusUrl>https://repository.preprod.weforum.org/repository/maven-esms-releases
+                            <nexusUrl>https://nexuseks.weforum.local/repository/maven-esms-releases
                             </nexusUrl>
                             <skipStaging>true</skipStaging>
                         </configuration>
@@ -171,23 +149,78 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>ilevent-demo</id>
+            <distributionManagement>
+                <snapshotRepository>
+                    <id>nexus-ilem-snapshots</id>
+                    <url>https://repository01.ilem.net/repository/maven-ilem-snapshots/</url>
+                </snapshotRepository>
+                <repository>
+                    <id>nexus-ilem-releases</id>
+                    <url>https://repository01.ilem.net/repository/maven-ilem-releases/</url>
+                </repository>
+            </distributionManagement>
+            <repositories>
+                <repository>
+                    <id>nexus-ilem-releases</id>
+                    <url>https://repository01.ilem.net/repository/maven-releases/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>nexus-ilem-snapshots</id>
+                    <url>https://repository01.ilem.net/repository/maven-snapshots/</url>
+                    <releases>
+                        <enabled>false</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>nexus-ilem-3rdParty</id>
+                    <url>https://repository01.ilem.net/repository/thirdparty/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>nexus-ilem-maven-releases</id>
+                    <url>https://repository01.ilem.net/repository/maven-releases/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
     </profiles>
 
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-esms-snapshots</id>
-            <url>https://repository.preprod.weforum.org/repository/maven-esms-snapshots/</url>
+            <url>https://nexuseks.weforum.local/repository/maven-esms-snapshots/</url>
         </snapshotRepository>
         <repository>
             <id>nexus-esms-releases</id>
-            <url>https://repository.preprod.weforum.org/repository/maven-esms-releases/</url>
+            <url>https://nexuseks.weforum.local/repository/maven-esms-releases/</url>
         </repository>
     </distributionManagement>
 
     <repositories>
         <repository>
             <id>nexus-forum-releases</id>
-            <url>https://repository.preprod.weforum.org/repository/maven-releases/</url>
+            <url>https://nexuseks.weforum.local/repository/maven-releases/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -197,12 +230,22 @@
         </repository>
         <repository>
             <id>nexus-forum-snapshots</id>
-            <url>https://repository.preprod.weforum.org/repository/maven-snapshots/</url>
+            <url>https://nexuseks.weforum.local/repository/maven-snapshots/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
             <snapshots>
                 <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>nexus-forum-3rdParty</id>
+            <url>https://nexuseks.weforum.local/repository/3rdParty/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
