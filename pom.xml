@@ -5,7 +5,7 @@
 
     <groupId>com.github.mnoky</groupId>
     <artifactId>hazelcast-docker-swarm-discovery-spi</artifactId>
-    <version>1.0-RC16-42</version>
+    <version>1.0-RC17-SNAPSHOT</version>
     <name>hazelcast-docker-swarm-discovery-spi</name>
     <description>Docker swarm based discovery strategy SPI for Hazelcast enabled applications</description>
 
